@@ -1,0 +1,119 @@
+.ssb-btn-tertiary {
+  .button-header {
+    @include reset-button;
+    @include roboto;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    .button-grid {
+      cursor: pointer;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      grid-column-gap: 6px;
+    }
+
+    svg {
+      color: $ssb-green-4;
+      font-size: 20px;
+    }
+
+    .header-text {
+      color: $ssb-dark-6;
+    }
+
+    &:hover,
+    &:focus {
+      @include focus-ring;
+
+      .header-text {
+        color: $ssb-green-4;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+
+    &.no-icon {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    &:disabled {
+      .button-grid {
+        cursor: not-allowed;
+
+        .header-text {
+          color: $ssb-dark-2;
+          text-decoration: none;
+        }
+
+        .expand-icon * {
+          color: $ssb-dark-2;
+        }
+      }
+    }
+  }
+
+  .accordion-body {
+    @include open-sans;
+    color: $ssb-dark-6;
+    font-size: 16px;
+
+    &.closed {
+      display: none;
+      height: 0;
+    }
+  }
+
+  &.negative {
+    .button-header {
+      &.no-icon {
+        text-decoration: underline;
+        text-decoration-color: $ssb-white;
+      }
+
+      .button-grid {
+        .header-text {
+          color: $ssb-white;
+        }
+
+        svg {
+          color: $ssb-green-2;
+        }
+      }
+
+      &:disabled {
+        .button-grid {
+          cursor: not-allowed;
+
+          .header-text {
+            color: $ssb-dark-4 !important;
+            text-decoration: none;
+          }
+
+          svg {
+            color: $ssb-dark-4;
+          }
+
+          .expand-icon * {
+            color: $ssb-dark-4;
+          }
+        }
+
+        &.no-icon {
+          .button-grid .header-text {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .accordion-body {
+      color: $ssb-white;
+    }
+  }
+}

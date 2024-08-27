@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormError component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-form-error"
+  >
+    <span
+      class="error-icon"
+    />
+    <div>
+      <span
+        class="error-title"
+      >
+        Some fields are not right!
+      </span>
+      <ul>
+        <li>
+          Not a valid email
+        </li>
+        <li>
+          Select a country
+        </li>
+        <li>
+          Feed the dog
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "prettier/prettier": ["warn"],
+    "no-unused-vars": "off", // https://github.com/typescript-eslint/typescript-eslint/issues/2621
+    "no-use-before-define": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "func-names": ["error", "never"],
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0, // because the project uses aliases
+    "linebreak-style": 0,
+    "max-len": ["warn", {"code": 200}],
+    "no-console": 0,
+    "no-irregular-whitespace": 0,
+    "no-tabs": 0,
+    "object-curly-newline": "off",
+    "react/destructuring-assignment": [1, "always", {
+      "ignoreClassFields": true
+    }],
+    "react/button-has-type": 0,
+    "react/forbid-prop-types": 0,
+    "react/function-component-definition": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "react/require-default-props": 0,
+    "react/sort-comp": [1, {
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "render",
+        "everything-else"
+      ]}
+    ],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 1,
+    "jsx-a11y/label-has-associated-control": ["error", {
+      "required": {
+        "some": ["nesting", "id"]
+      }
+    }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "globals": {
+    "document": false,
+    "fetch": false
+  }
+}

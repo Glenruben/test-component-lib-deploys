@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Table component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-table-wrapper"
+  >
+    <table
+      class="ssb-table"
+    >
+      <caption>
+        <div
+          class="caption-wrapper single-line"
+          style="position: relative;"
+        >
+          <div
+            class="caption-text-wrapper"
+          >
+            Table caption
+          </div>
+          <div
+            class="scroll-icon-wrapper "
+          >
+            <div
+              aria-label="Scroll left"
+              class="scroll-icon "
+              role="button"
+              tabindex="-1"
+            >
+              <svg
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <polyline
+                  points="12 8 8 12 12 16"
+                />
+                <line
+                  x1="16"
+                  x2="8"
+                  y1="12"
+                  y2="12"
+                />
+              </svg>
+            </div>
+            <div
+              aria-label="Scroll right"
+              class="scroll-icon "
+              role="button"
+              tabindex="-1"
+            >
+              <svg
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <polyline
+                  points="12 16 16 12 12 8"
+                />
+                <line
+                  x1="8"
+                  x2="16"
+                  y1="12"
+                  y2="12"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </caption>
+      <thead>
+        <tr>
+          <th
+            class=" align-right"
+            rowspan="2"
+          >
+            Header with footnote 
+            <sup>
+              1
+            </sup>
+          </th>
+          <th
+            class=""
+            scope="colgroup"
+          >
+            Alignment
+          </th>
+        </tr>
+        <tr>
+          <th
+            class=" align-right"
+            scope="col"
+          >
+            Header right
+          </th>
+          <th
+            class=" align-center"
+            scope="col"
+          >
+            Header center
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th
+            class=""
+            scope="row"
+          >
+            Value
+          </th>
+          <td
+            class=" align-right"
+          >
+            500
+          </td>
+          <td
+            class=" align-center"
+          >
+            Center
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td
+            class=""
+            colspan="3"
+          >
+            <sup>
+              1
+            </sup>
+             Footnote description
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Table component Simple table without caption and footer 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-table-wrapper"
+  >
+    <table
+      class="ssb-table"
+    >
+      <thead>
+        <tr>
+          <th
+            class=""
+          >
+            Header
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            class=""
+          >
+            Value
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

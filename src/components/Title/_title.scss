@@ -1,0 +1,66 @@
+.ssb-title {
+  color: $ssb-dark-6;
+  margin-top: 0;
+
+  &.negative {
+    color: $ssb-white;
+  }
+
+  @at-root {
+    h1#{&} {
+      @include roboto-condenced;
+      font-size: 3.5rem;
+      font-weight: bold;
+      line-height: 5rem;
+    }
+
+    h2#{&} {
+      @include roboto-condenced;
+      font-size: 1.75rem;
+      font-weight: bold;
+      line-height: 2.5rem;
+    }
+
+    h3#{&} {
+      @include roboto;
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+
+    h4#{&} {
+      @include roboto;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.75rem;
+    }
+
+    h5#{&} {
+      @include roboto;
+      font-size: 1.125rem;
+      font-weight: bold;
+      line-height: 1.7rem;
+    }
+
+    h6#{&} {
+      @include roboto;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.7rem;
+    }
+
+    @media #{$mobile} {
+      h1#{&} {
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+      }
+
+      h2#{&} {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+      }
+
+      // No change for h3 and h4
+    }
+  }
+}

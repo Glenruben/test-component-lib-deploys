@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-footer-wrapper"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+</DocumentFragment>
+`;

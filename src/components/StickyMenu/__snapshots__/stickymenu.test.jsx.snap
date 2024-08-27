@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StickyMenu component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-sticky-menu"
+  >
+    <div
+      class="menu-content"
+    >
+      StickyMenu
+    </div>
+  </div>
+</DocumentFragment>
+`;

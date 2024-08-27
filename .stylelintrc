@@ -1,0 +1,15 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "ignoreFiles": ["src/style/_variables.scss", "src/style/_grid.scss"],
+  "rules": {
+    "color-named": "never",
+    "color-no-hex": true,
+    "comment-no-empty": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-empty-line-before": "never",
+    "length-zero-no-unit": true,
+    "no-descending-specificity": null,
+    "selector-type-case": "lower",
+    "selector-type-no-unknown": [true, { "ignore": ["default-namespace"] }]
+  }
+}

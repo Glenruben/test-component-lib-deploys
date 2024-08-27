@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`References component Matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ssb-references"
+  >
+    <span
+      class="reference-header"
+    >
+      Source
+    </span>
+    <div>
+      <a
+        class="ssb-link"
+        href=" "
+      >
+        <span
+          class="link-text"
+        >
+          Link 1
+        </span>
+      </a>
+      <br />
+    </div>
+    <div>
+      <a
+        class="ssb-link"
+        href=" "
+      >
+        <span
+          class="link-text"
+        >
+          Link 2
+        </span>
+      </a>
+      <br />
+    </div>
+    <div>
+      <span
+        class="ssb-text-wrapper no-margin"
+      >
+        A paragraph 
+      </span>
+      <a
+        class="ssb-link"
+        href=" "
+      >
+        <span
+          class="link-text"
+        >
+          Link 3
+        </span>
+      </a>
+      <br />
+    </div>
+  </div>
+</DocumentFragment>
+`;
