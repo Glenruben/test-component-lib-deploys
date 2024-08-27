@@ -15,6 +15,7 @@ export const Default = () => (
      TEST component please INGOER
       This is paragraph text which explains the accordion, the rest of the text is just to fill it out and show the
       space it takes.
+     ALSO GIEF COOKIE
     </Accordion>
   </div>
 )
